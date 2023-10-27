@@ -103,6 +103,6 @@ func main() {
 	if err := nc.Publish("updates", jsonBytes); err != nil {
 		log.Fatal(err)
 	}
-	log.Println("Send an order")
+	log.Println("Send an order " + order.Order_uid)
 	log.Println(order.Date_created)
 }
