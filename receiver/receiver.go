@@ -202,7 +202,7 @@ func ProvideGetItem(w http.ResponseWriter, r *http.Request) {
 			}
 		}
 		w.WriteHeader((http.StatusNotFound))
-		w.Write([]byte("Payment с данным id не найден!"))
+		w.Write([]byte("Item с данным id не найден!"))
 		return
 
 	}
